@@ -1,8 +1,8 @@
 package firstproject;
 
-class Animal {
-	public void speak() {
-		System.out.println("No specified souud available...");
+class Animal   {
+	public   void speak() {
+		System.out.println("No   specified souud available...");
 	}
 }
 
