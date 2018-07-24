@@ -11,7 +11,7 @@ public class ExceptionHandlingEx1 {
 		}
 		catch (Exception e) {
 			System.out.println("Cant divide by zero");
-		}
+		} 
 		System.out.println("End!!");
 	}
 

@@ -1,4 +1,4 @@
-package firstproject;
+//package firstproject;
 
 public class Product {
 
