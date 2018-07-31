@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<TITLE> Login Form </TITLE>
+	<SCRIPT>
+			function validateUser(){
+			var x=document.getElementById("t1").value;
+			var y=document.getElementById("t2").value;
+			if(x=='' || y==''){
+					 alert("Please enter data..It cant be blank..");
+					 return false;
+			}
+			else{
+				 alert("Successfully submitted..");
+					 return true;
+			}
+			}
+	</SCRIPT>
+</HEAD>
+<BODY>
+	<center><H1 style="color:blue">Login Form</H1></center>
+	<HR>
+	<FORM action="http://localhost:8080/MyServlet/Validate" onsubmit="return validateUser()">
+	<center>User Name : <INPUT TYPE="TEXT" NAME="t1" placeholder="Username"><BR><BR>
+	Password : <INPUT TYPE="Password" NAME="t2" id="t1" placeholder="Password"><BR><BR>
+	Enter your DOB : <INPUT TYPE="Date" NAME="dt" id="t2"><BR><BR>
+	Enter your age : <INPUT TYPE="number" NAME="age" min="1" max="99"><BR><BR>
+	<INPUT TYPE="submit" NAME="submit"></center>
+	</FORM>
+<BODY>
+<HTML>
+	
