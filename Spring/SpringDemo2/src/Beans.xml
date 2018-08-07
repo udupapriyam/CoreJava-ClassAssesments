@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="Comp" class="com.deloitte.ComputerPOJO" autowire="byName">
+   		<property name="brandName" value="DELL"></property>
+   </bean>
+   
+   <bean id="cpu1" class="com.deloitte.CpuPOJO">
+   		<property name="Cpubrand" value="AMD"></property>
+   </bean>
+ </beans>

@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id="mob" class="com.deloitte.Smartphone">
+   		<property name="name" value="Moto"></property>
+   		<property name="price" value="13500.00"></property>
+   		<constructor-arg ref="apps"></constructor-arg>
+   </bean>
+   
+   <bean id="apps" class="com.deloitte.Application">
+   		<property name="name" value="CandyCrush"></property>
+   		<property name="type" value="Games"></property>
+   </bean>
+ </beans>
